@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>laba</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="../../index.html">laba1</a></li>
+            <li class="nav__item">
+              <a href="./src/pages/laba2.html">laba2</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-- HTML !-->
+        <div class="block">
+          <button class="button" role="button" data-modal-open>Modal</button>
+        </div>
+        <div class="overlay is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-link-exit" data-modal-close>
+              <svg class="modal-exit">
+                <use href="../img/icon/icons.svg#icon-exit"></use>
+              </svg>
+            </button>
+            <p class="modal-title">Відправте свої дані</p>
+            <form class="modal-form">
+              <div class="form-field">
+                <label class="modal-label" for="user-name">Імʼя</label>
+                <div class="icon-wrap">
+                  <input
+                    type="text"
+                    name="user-name"
+                    class="modal-input"
+                    id="user-name"
+                    required
+                  />
+                  <svg class="modal-icons">
+                    <use href="../img/icon/icons.svg#icon-person-modal"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label class="modal-label" for="user-tel">Телефон</label>
+                <div class="icon-wrap">
+                  <input
+                    type="tel"
+                    name="user-tel"
+                    class="modal-input"
+                    id="user-tel"
+                  />
+                  <svg class="modal-icons">
+                    <use href="../img/icon/icons.svg#icon-phone-modal"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="modal-label" for="user-email">Пошта</label>
+                <div class="icon-wrap">
+                  <input
+                    type="email"
+                    name="user-email"
+                    class="modal-input"
+                    id="user-email"
+                    required
+                  />
+                  <svg class="modal-icons">
+                    <use href="../img/icon/icons.svg#icon-email-modal"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-field">
+                <label class="modal-label" for="modal-text">Коментарій</label>
+                <textarea
+                  name="comment"
+                  id="modal-text"
+                  class="modal-text"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+              <div class="checkbox-field">
+                <input
+                  type="checkbox"
+                  id="modal-checkbox"
+                  name="modal-checkbox"
+                  class="modal-checkbox visually-hidden"
+                  required
+                />
+
+                <label for="modal-checkbox" class="modal-label-checkbox">
+                  <span>
+                    <svg class="modal-check-icon">
+                      <use href="../img/icon/icons.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  Підписка&nbsp;
+                  <a href="#" class="submit-text">Умови договору</a>
+                </label>
+              </div>
+
+              <button type="submit" class="modal-btn">Відправити</button>
+            </form>
+          </div>
+        </div>
+        <script src="../js//modal.js"></script>
+      </main>
+    </div>
+  </body>
+</html>
